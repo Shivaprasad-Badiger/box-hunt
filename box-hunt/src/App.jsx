@@ -2,6 +2,16 @@ import { useEffect, useRef, useState } from 'react'
 import './App.css'
 import { debounce } from 'lodash'
 
+// Hey, thanks for taking the time to review this code.
+// There some of the issues I have encountered while building this so code became a little messy and I do acknowledge it.
+
+// I originally tried handling setInterval using useRef, but I made a small mistake by assigning the 
+// interval directly to the ref instead of ref.current and faced issue with clearInterval. Because of that, 
+// I ended up removing useRef and just assigning setInterval to a variable.
+
+// That one mistake led me down a bit of a workaround using localStorage and reloads. 
+// The main functionality works fine overall, though there are still a few minor bugs.
+
 function App() {
   const [count, setCount] = useState()
   const [reactionTime, setReactionTime] = useState(localStorage.getItem("reactionTime") || 0)
