@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
 import { debounce } from 'lodash'
+import { Link } from 'react-router-dom'
 
 // Hey, thanks for taking the time to review this code.
 // There some of the issues I have encountered while building this so code became a little messy and I do acknowledge it.
@@ -78,7 +79,7 @@ function App() {
         }}>
           <h3>Box Hunt (Original)</h3>
           <button>
-            <a href="/corrected">Go to Corrected Version</a>
+            <Link to="/corrected">Go to Corrected Version</Link>
           </button>
         </div>
 

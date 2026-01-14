@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
+import { Link } from 'react-router-dom'
 
 function App() {
     const [counter, setCounter] = useState(0)
@@ -74,7 +75,7 @@ function App() {
                 }}>
                     <h3>Box Hunt (Corrected)</h3>
                     <button>
-                        <a href="/">Go to Original Version</a>
+                        <Link to="/">Go to Original Version</Link>
                     </button>
                 </div>
                 <div style={{
