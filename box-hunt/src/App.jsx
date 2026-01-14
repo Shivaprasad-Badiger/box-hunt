@@ -68,6 +68,20 @@ function App() {
         height: "600px",
         border: "1px solid #000"
       }}>
+
+        <div style={{
+          borderBottom: "1px solid #000",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          padding: "10px"
+        }}>
+          <h3>Box Hunt (Original)</h3>
+          <button>
+            <a href="/corrected">Go to Corrected Version</a>
+          </button>
+        </div>
+
         <div style={{
           borderBottom: "1px solid #000"
         }}>
